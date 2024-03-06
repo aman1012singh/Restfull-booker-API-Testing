@@ -18,7 +18,7 @@ const bookingData = BookingDataGenerator.bookingData()
 let bookingid;
 
 test.describe.serial('Api Test Suite', async () => {
-    test("",async ({request}) => {
+    test("Create Booking",async ({request}) => {
         // Step 1: Create a Booking
         const createResponse = await POST.createBooking({request},bookingData);
         const responseBody = await createResponse.json();
